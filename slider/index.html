@@ -1,7 +1,70 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Slider test</title>
-	</head>
-	<body></body>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Slider test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <div class="swiper mySwiper">
+        <!-- Slider Container -->
+        <div class="swiper-wrapper sliderContainer">
+            <!-- Slide 1 -->
+            <div class="swiper-slide slide slide1">
+                <div class="textContainer">
+                    <div class="slideCount">1</div>
+                    <h1 class="slideTitle">Gradients</h1>
+                    <p class="slideDescription">Start, end, angle</p>
+                </div>
+                <div class="imageContainer">
+                    <div class="image">
+                        <img src="images/dropIcon.png" />
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 1 Ends -->
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide slide slide2">
+                <div class="textContainer">
+                    <div class="slideCount">2</div>
+                    <h1 class="slideTitle">Presets</h1>
+                    <p class="slideDescription">Manage presets</p>
+                </div>
+                <div class="imageContainer">
+                    <div class="image">
+                        <img src="images/paintIcon.png" />
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 Ends -->
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide slide slide3">
+                <div class="textContainer">
+                    <div class="slideCount">3</div>
+                    <h1 class="slideTitle">Colors</h1>
+                    <p class="slideDescription">Pick any color</p>
+                </div>
+                <div class="imageContainer">
+                    <div class="image">
+                        <img src="images/dropper.png" />
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 Ends -->
+        </div>
+    </div>
+    <!-- Swiper Library Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initializing Swiper
+        var swiper = new Swiper(".mySwiper", {});
+    </script>
+</body>
+
 </html>
